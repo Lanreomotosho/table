@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState, useEffect} from 'react'
 
 const BookingForm = (props) => {
     const [date, setDate] = useState("");
@@ -41,8 +41,6 @@ const BookingForm = (props) => {
                         <div>
                             <label htmlFor='book-guest'>Number of guests:</label>
                             <input id="book-guests" min='1' value={guests} onChange={(e) => setGuest(e.target.value)}/>
-                               
-                            
                         </div>
 
                         {/* Ocation field */}
@@ -56,7 +54,7 @@ const BookingForm = (props) => {
 
                         {/* Submit button */}
                         <div className='btnReceive'>
-                            <input aria-label='onClick' type='submit' value={"Make your Reservation"}/>
+                            <button aria-label='On Click'>Make your Reservation</button>
                         </div>
                     </fieldset>
 

@@ -33,13 +33,18 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-  text-decoration: underline solid #495E57;
-  
+  text-decoration: underline solid ;
+  opacity: 0.7;
+  color: #F4CE14;
 }
 
 .menu-icon {
   display: none;
   cursor: pointer;
+}
+
+.menu-icon:hover {
+opacity: 0.7;
 }
 
 .bar {
@@ -109,6 +114,10 @@ button {
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
 }
 
 .banner-img{
